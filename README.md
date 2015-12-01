@@ -1,6 +1,8 @@
 # npm by the numbers 
 > a preso for Node Interactive
 
+![title slide](public/img/titleslide.png)
+
 ## abstract
 
 Every day, there are approximately 2,500,000 npm install events.
