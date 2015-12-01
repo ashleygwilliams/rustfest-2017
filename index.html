@@ -9,14 +9,36 @@
     <textarea id="source">
 
 class: center, middle
+background-image: url(public/img/pbn_cat.jpg)
+background-color: #FFE4C4
 
-# you don't know
 ![npm logo](public/img/npm.png)
+# by the numbers
 
 ---
 class: center, middle
 
-## http://bit.ly/you-dont-know-npm
+# Everyday around 250,000 install events occur.
+
+---
+class: center, middle
+
+# Each install is around 50 packages.
+
+---
+class: center, middle
+
+# 2,500,000 * 50
+
+---
+class: center , middle
+
+# 125,000,000
+
+---
+class: center, middle
+
+# That's a lot of packages.
 
 ---
 class: center, middle
@@ -56,230 +78,10 @@ class: center, middle
 ---
 class: center, middle
 
-## stuff everybody knows
-# `npm install`
-
----
-class: center, middle
-
-## stuff not everyone knows
-![i dont know](public/img/idontknow.gif)
-
----
-class: top left
-
-## create a package.json
-# `npm init`
-
-- ### knows your deps from node_modules
-- ### knows your repository from git repo
-- ### always adds keys, never deletes
-
-![chick](public/img/chick.png)
-
----
-class: top, left
-
-## create a package.json with defaults
-# `npm init --yes`
-
-![yes](public/img/yes.gif)
-
----
-class: top, left
-
-## add deps from the CLI
-# `npm i --save`
-# `npm i --save-dev`
-
-![disk](public/img/disk.png)
-![disk](public/img/disk.png)
-![disk](public/img/disk.png)
-
----
-class: top, left
-
-## npm... global cache?
-# `.npm/`
-## modules are stored in the home directory
-
-### ... but you can't use this offline because it still hits the network
-
-![money](public/img/cash.png)
-
----
-
-## npm install offline
-### `npm install --cache-min 999999`
-
-### we should probably just alias this to:
-### `npm install --offline`
-
-![money](public/img/cash.png)
-![money](public/img/cash.png)
-![money](public/img/cash.png)
-
----
-class: top, left
-
-## lock down your deps
-# `npm shrinkwrap`
-
-![shrinkwrap](public/img/shrinkwrap.gif)
-
----
-class: top, left
-
-## lock down your deps
-# `npm shrinkwrap`
-
-- ### deploy to production EXACTLY what you used in dev
-- ### locks every version of every package and all dependencies in node_modules
-
----
-class: center, middle
-
-# why not a default feature?
-
----
-class: top, center
-
-# we believe in semver
-
-![want to believe](public/img/wanttobelieve.jpg)
-
----
-class: top, left
-
-## semver made easy
-# `npm version <type>`
-### `types: major, minor, patch`
-
-- ### major: breaking changes
-- ### minor: feature add
-- ### patch: bug fix, docs
-
----
-class: top, left
-
-### run scripts
-### `npm test`
-### `npm start`
-### `npm run $anything`
-
-### Automate CLI workflows, e.g. build steps, migrations
-
-![theater](public/img/theater.png)
-
----
-class: top, left
-## lifecycle events
-
-## `publish, install, uninstall, version, test, stop, start, restart`
-## `pre, post`
-
-![seedling](public/img/seedling.png)
-![plant](public/img/plant.png)
-![tree](public/img/tree.png)
- 
----
-class: top, left
-
-## run scripts are composable
-#### `"db:migrate": "knex migrate:latest"`
-#### `"db:seed": "knex seed:run"`
-#### `"db:reset": "npm run db:migrate && npm run db:seed"`
-
-![score](public/img/score.png)
-
----
-class: middle, center
-
-# scoped packages
-## (fancy way of saying namespaced packages!)
-
----
-class: top, left
-
-## scoped packages
-# `npm i @scope/name`
-
-![telescope](public/img/telescope.png)
-
---
-
-### scoped packages are private by default but you can make them public:
-### `npm publish --access=public`
-
-
----
-class: middle, center
-
-# npm private modules
-![lock](public/img/lock.png)
-
---
-
-### (it's recursive! get it? get it?)
-
---
-
-npmnpmnpmnpmnpmnpmlolololololol
-
----
-class: top, left
-
-## private modules
-## `npm init --scope=<usrname>`
-
-### Use your private modules side by side with modules from the public registry
-
-![dancers](public/img/dancers.png)
- 
----
-class: middle, center
-
-# Managing access is hard...
-![orgs](public/img/orgs.gif)
-
----
-class: top, left
-
-## npm organizations
-# `npm team`
-
-- ### create teams and add members 
-- ### grant and revoke access to packages via scopes
-
-![team](public/img/team.png)
-
----
-class: top, left
-
-# npm on-site
-## run your own on-premises npm registry
-### `npm login`
-### ` --registry=http://reg.amazing.com`
-
-![office](public/img/office.png)
-![runner](public/img/runner.png)
-
---
-
-(get it? run? runner?) 
-
----
-class: middle, center
-
-![the more you know](public/img/moreyouknow.jpg)
-
----
-class: center, middle
-
 # thanks!
 ## `me => @ag_dubs`
 
-## bit.ly/you-dont-know-npm
+## bit.ly/npm-by-the-numbers
 
 ![space invader](public/img/spaceinvader.png)
 ![ghost](public/img/ghost.png)

@@ -9,6 +9,11 @@ body {
   color: white;
 }
 
+h1 {
+  background-color: rgba(203, 56, 55, 1);
+  color: white;
+}
+
 code {
   background-color: #4e4e4e;
   color: #e6e6e6;
