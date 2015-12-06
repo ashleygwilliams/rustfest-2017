@@ -1,0 +1,23 @@
+{
+  "name": "npm-by-the-numbers",
+  "version": "1.0.0",
+  "description": "> a preso for Node Interactive",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashleygwilliams/npm-by-the-numbers.git"
+  },
+  "keywords": [],
+  "author": "ag_dubs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashleygwilliams/npm-by-the-numbers/issues"
+  },
+  "homepage": "https://github.com/ashleygwilliams/npm-by-the-numbers",
+  "devDependencies": {
+    "live-server": "^0.8.2"
+  }
+}
