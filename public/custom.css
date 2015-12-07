@@ -12,6 +12,7 @@ body {
 h1 {
   background-color: rgba(203, 56, 55, 1);
   color: white;
+  padding: 10px 20px;
 }
 
 code {
@@ -27,4 +28,17 @@ li > code {
 
 a:visited, a:active, a {
   color: white;
+}
+
+.real-big {
+  font-size: 2em;
+}
+
+.citation {
+  font-size: 0.7em;
+  padding: 5px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(203, 56, 55, 1);
 }
