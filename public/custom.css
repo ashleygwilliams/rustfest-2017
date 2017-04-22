@@ -19,15 +19,14 @@ h1, h2 {
   padding: 10px 20px;
 }
 
+.dependencies h1, .dependencies h2 {
+  padding: 0;
+}
+
 pre, code {
   background-color: #4e4e4e;
   color: #e6e6e6;
   padding: 15px;
-}
-
-li > code {
-  background-color: none;
-  padding: 0;
 }
 
 a:visited, a:active, a {
