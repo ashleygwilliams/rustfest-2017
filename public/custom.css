@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900);
 
+.wombat > h1 {
+  background-color: #4e4e4e;
+}
+
 img {
   max-width: 100%;
 }

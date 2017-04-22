@@ -345,11 +345,9 @@ class: middle, center
 ---
 class: middle, center
 
-# run scripts are composable!
+# `npm i -D shelljs`
 
-![score](public/img/score.png)
-![score](public/img/score.png)
-![score](public/img/score.png)
+![shelljs](public/img/shelljs.png)
 
 ---
 class: middle, center
@@ -363,14 +361,6 @@ class: middle, center
 ![sparkles](public/img/sparkles.png)
 ![free](public/img/free.png)
 ![sparkles](public/img/sparkles.png)
-
-
----
-class: middle, center
-
-# `npm i -D shelljs`
-
-![shelljs](public/img/shelljs.png)
 
 ---
 class: center, middle
@@ -418,6 +408,48 @@ class: top, left
   }
 }
 </pre>
+
+---
+class: middle, left
+
+## don't hardcode node_modules
+
+<pre>
+{
+  "...": "...",
+  "scripts": {
+    "start": "./node_modules/mocha/bin/mocha"
+  },
+  "...": "..."
+}
+</pre>
+
+---
+class: middle, left
+
+## don't hardcode node_modules
+
+<pre>
+{
+  "...": "...",
+  "scripts": {
+    "start": "mocha"
+  },
+  "...": "..."
+}
+</pre>
+
+---
+class: center, middle
+
+# cute dog break!
+
+![](public/img/confused.gif)
+
+---
+class: center, middle
+
+![how to publish](public/img/howpublish.jpg)
 
 ---
 class: center, middle
@@ -503,6 +535,24 @@ class: center, middle
 # `tar xvzf pkg.tar.gz`
 
 ---
+class: left, middle
+
+# `.npmignore`
+
+### - will match your .gitignore if no .npmignore
+### - an empty .npmignore will override a .gitignore
+### - you can't ignore some things, like package.json or a README
+
+---
+class: left, middle
+
+# `"files": [...]`
+
+### - add as an array to your package.json
+### - list the files that should be included
+### - some things are included even if they aren't listed like package.json or a README
+
+---
 class: center, middle
 
 # `np` by sindresorhus
@@ -539,7 +589,7 @@ background-color: #FFE4C4
 
 ![policy](public/img/policy.png)
 
-#### [http://blog.npmjs.org/post/141905368000/changes-to-npms-unpublish-policy](http://blog.npmjs.org/post/141905368000/changes-to-npms-unpublish-policy)
+.citation[[http://blog.npmjs.org/post/141905368000/changes-to-npms-unpublish-policy](http://blog.npmjs.org/post/141905368000/changes-to-npms-unpublish-policy)]
 
 ---
 class: center, middle
@@ -629,6 +679,17 @@ class: top, left
 - ### grant and revoke access to packages via teams
 
 ![team](public/img/team.png)
+![team](public/img/team.png)
+![team](public/img/team.png)
+
+---
+class: middle, center
+
+# npm orgs are free for public packages!
+
+![tada](public/img/tada.png)
+![tada](public/img/tada.png)
+![tada](public/img/tada.png)
 
 ---
 class: center, middle
@@ -793,6 +854,7 @@ background-color: #FFE4C4
 # search API
 ![search api](public/img/searchapi.png)
 
+.citation[https://github.com/npm/registry/blob/master/docs/REGISTRY-API.md#get-v1search]
 ---
 class: center, middle
 background-image: url(public/img/pbn_ship.jpg)
@@ -801,6 +863,7 @@ background-color: #FFE4C4
 # registry changes-stream
 # [https://replicate.npmjs.com](https://replicate.npmjs.com)
 
+.citation[https://github.com/jcrugzz/changes-stream]
 ---
 class: center, middle
 background-image: url(public/img/pbn_ship.jpg)
@@ -810,7 +873,7 @@ background-color: #FFE4C4
 
 ![follower](public/img/follower.png)
 
-#### [https://github.com/npm/registry/blob/master/docs/follower.md](https://github.com/npm/registry/blob/master/docs/follower.md)
+.citation[https://github.com/npm/registry/blob/master/docs/follower.md]
 
 ---
 class: center, middle
@@ -827,6 +890,7 @@ background-color: #FFE4C4
 
 ![hook events](public/img/hookevents.png)
 
+.citation[https://github.com/npm/registry/tree/master/docs/hooks]
 ---
 class: center, middle
 background-image: url(public/img/pbn_ship.jpg)
@@ -850,8 +914,8 @@ class: center, middle
 background-image: url(public/img/pbn_ship.jpg)
 background-color: #FFE4C4
 
-# `npm i wombat -g`
-# `wombat hook add <pkg> <url> <secret>`
+.wombat[# `npm i wombat -g`]
+.wombat[# `wombat hook add <pkg> <url> <secret>`]
 
 ---
 class: center, middle
