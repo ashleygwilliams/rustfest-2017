@@ -9,11 +9,50 @@
     <textarea id="source">
 
 class: center, middle
-background-image: url(public/img/pbn_cat.jpg)
+
+# you don't know
+![npm logo](public/img/npm.png)
+
+---
+class: center, middle
+
+## http://bit.ly/fwdays-2017
+### (gh-pages: ashleygwilliams/fwdays-2017)
+
+---
+class: center, middle, stats
+background-image: url(public/img/pbn_ducks.jpg)
 background-color: #FFE4C4
 
-![npm logo](public/img/npm.png)
-# by the numbers
+# everyday around 1,800,000 install events occur.
+
+---
+class: center, middle, stats
+background-image: url(public/img/pbn_ducks.jpg)
+background-color: #FFE4C4
+
+# each install is around 70 packages.
+
+---
+class: center, middle, stats
+background-image: url(public/img/pbn_ducks.jpg)
+background-color: #FFE4C4
+
+# 1,800,000 * 70
+
+---
+class: center, middle, stats
+background-image: url(public/img/pbn_ducks.jpg)
+background-color: #FFE4C4
+
+# .real-big[126,000,000]
+
+---
+class: center, middle, stats
+background-image: url(public/img/pbn_ducks.jpg)
+background-color: #FFE4C4
+
+# that's a lot of packages
 
 ---
 class: center, middle
@@ -54,69 +93,310 @@ class: center, middle
 ---
 class: center, middle
 
-# ?????lolwat
-![confused malmutes](public/img/confused.gif)
+# CLI
+# Registry
+# Website
 
 ---
 class: center, middle
 
-# if you don't understand how npm works
-![fire](public/img/fire.png)
-![fire](public/img/fire.png)
-![fire](public/img/fire.png)
+# CLI
+# .real-big[✨Registry✨]
+# Website
+
+---
+class: center, middle
+background-image: url(public/img/pbn_forest.jpg)
+background-color: #FFE4C4
+
+# over the last year
+# .real-big[70 billion]
+# package downloads occured
+
+.citation[https://twitter.com/seldo/status/845094537752014852. 23 March 2017.]
+
+---
+class: center, middle
+background-image: url(public/img/pbn_forest.jpg)
+background-color: #FFE4C4
+
+![rolling-weekly-download](public/img/rolling-downloads.jpg)
+
+.citation[https://twitter.com/seldo/status/845094537752014852. 23 March 2017.]
 
 ---
 class: center, middle
 
-# that's my problem
-![grimacing](public/img/grimacing.png)
+## stuff everybody knows
+# `npm install`
 
 ---
 class: center, middle
-background-image: url(public/img/paint_by_number.jpg)
+
+## stuff not everyone knows
+![i dont know](public/img/idontknow.gif)
+
+---
+class: center, middle
+
+# `npm isntall`
+
+---
+class: top, left
+
+## add deps from the CLI
+# `npm i --save`
+# `npm i --save-dev`
+
+![disk](public/img/disk.png)
+![disk](public/img/disk.png)
+![disk](public/img/disk.png)
+
+---
+class: top, left
+
+## add deps from the CLI
+# `npm i -S`
+# `npm i -D`
+
+![disk](public/img/disk.png)
+![disk](public/img/haircut.png)
+![disk](public/img/disk.png)
+
+---
+class: middle, left
+
+## show the dep tree
+# `npm ls`
+
+![list](public/img/clipboard.png)
+![tree](public/img/tree.png)
+![list](public/img/clipboard.png)
+
+---
+class: middle, left
+
+## show just primary deps
+# `npm ls --depth=0`
+
+![list](public/img/clipboard.png)
+![list](public/img/seedling.png)
+![list](public/img/clipboard.png)
+
+---
+class: middle, center
+
+![npm prune](public/img/npm-prune.png)
+
+---
+class: top, left
+
+## npm... global cache?
+# `.npm/`
+## modules are stored in the home directory
+
+### ... but you can't use this offline because it still hits the network
+
+---
+class: top, left
+
+## npm install offline
+### `npm install --cache-min 999999`
+
+### we should probably just alias this to:
+### `npm install --offline`
+
+![money](public/img/cash.png)
+![money](public/img/cash.png)
+![money](public/img/cash.png)
+
+---
+class: top, left
+
+## npm install offline
+# `npm pack`
+## `npm install my-pkg.tgz`
+### create a tarball out of any package and then use install directly on the tarball
+
+![shirt](public/img/shirt.png)
+![soon](public/img/soon.png)
+![suitcase](public/img/suitcase.png)
+
+---
+class: top, left
+
+## pack your deps!
+# `bundledDependencies`
+### pack doesn't add your pkg's deps BUT
+### bundled deps are added to the tarball!
+
+![suitcase](public/img/suitcase.png)
+![soon](public/img/soon.png)
+![suitcase](public/img/suitcase.png)
+
+---
+class: middle, left, dependencies
+
+- ## `dependencies` ![juggling](public/img/juggling.png)
+- ## `devDependencies` ![hammer wrench](public/img/hammer_wrench.png)
+- ## `optionalDependencies` ![ghost](public/img/shrug.png)
+- ## `peerDependencies` ![plug](public/img/plug.png)
+
+---
+class: top, left
+
+## lock down your deps
+# `npm shrinkwrap`
+
+![shrinkwrap](public/img/shrinkwrap.gif)
+
+---
+class: top, left
+
+## update your shrinkwrap
+# `--save` and `--save-dev`
+
+### - don't need to shrinkwrap everytime
+### - new with npm3!
+
+![lock-pen](public/img/lock-pen.png)
+![new](public/img/new.png)
+![lock-pen](public/img/lock-pen.png)
+
+---
+class: center, middle
+
+# why not a default feature?
+
+---
+class: middle, center
+
+# we believe in semver
+
+![want to believe](public/img/wanttobelieve.jpg)
+
+---
+class: middle, center
+
+# semver.npmjs.com
+![semverdotnpmjs](public/img/semverdotnpmjs.png)
+
+---
+class: top, left
+
+## semver made easy
+# `npm version <type>`
+### `types: major, minor, patch`
+
+- ### major: breaking changes
+- ### minor: feature add
+- ### patch: bug fix, docs
+
+---
+class: center, middle
+
+# npm wants to make your life easy
+
+---
+class: top, left
+
+## automate all the things
+# `npm run $anything`
+
+### - `test`, `start`
+### - customize!
+![theater](public/img/theater.png)
+![runner](public/img/runner.png)
+![theater](public/img/theater.png)
+
+---
+class: middle, center
+
+# lifecycle events
+
+![lifecycle events](public/img/lifecycleevents.png)
+
+
+![seedling](public/img/seedling.png)
+![plant](public/img/plant.png)
+![tree](public/img/tree.png)
+
+---
+class: middle, center
+
+## `npm i --save-dev husky`
+
+![husky](public/img/husky.png)
+![husky](public/img/husky2.png)
+
+---
+class: middle, center
+
+# run scripts are composable!
+
+![score](public/img/score.png)
+![score](public/img/score.png)
+![score](public/img/score.png)
+
+---
+class: middle, center
+
+# get stuff for free
+
+# `npm run env`
+
+### `config` and `package.json` as variables
+
+![sparkles](public/img/sparkles.png)
+![free](public/img/free.png)
+![sparkles](public/img/sparkles.png)
+
+
+---
+class: middle, center
+
+# `npm i -D shelljs`
+
+![shelljs](public/img/shelljs.png)
+
+---
+class: center, middle
+
+# never install something globally again
+
+---
+class: middle, center
+
+# why run scripts?
 
 --
 
-# let's paint a story with numbers
+# because they are **versioned**
 
 ---
-class: center, middle
-background-image: url(public/img/pbn_forest.jpg)
-background-color: #FFE4C4
+class: top, left
 
-# packages installed 
+# let's look at an example
 
----
-class: center, middle
-background-image: url(public/img/pbn_forest.jpg)
-background-color: #FFE4C4
-
-# in the last 28 days, npm users have installed 18 billion packages
-
---
-
-# needing 6 billion downloads to do so
-
----
-class: center, middle
-background-image: url(public/img/pbn_forest.jpg)
-background-color: #FFE4C4
-
-# ~66% of installs are from cache!
-
----
-class: center, middle
-background-image: url(public/img/pbn_forest.jpg)
-background-color: #FFE4C4
-
-![monthly rolling downloads](public/img/newplot.png)
-
----
-class: center, middle
-background-image: url(public/img/pbn_barn.jpg)
-background-color: #FFE4C4
-
-# packages published
+<pre>
+{
+  "...": "...",
+  "scripts": {
+    "test": "npm run test:backend && npm run test:frontend",
+    "posttest": "standard",
+    "test:backend": "lab --verbose --assert code --timeout 5000",
+    "test:frontend": "karma start",
+    "...": "..."
+  },
+  "devDependencies": {
+    "...": "...",
+    "karma": "^1.1.1",
+    "lab": "^13.0.1",
+    "standard": "^10.0.2",
+    "...": "..."
+  }
+}
+</pre>
 
 ---
 class: center, middle
@@ -161,18 +441,54 @@ background-color: #FFE4C4
 # 102,460 publishers
 
 ---
-class: center, middle
-background-image: url(public/img/pbn_horses.jpg)
-background-color: #FFE4C4
+class: top, left
 
-![user registrations](public/img/registrations.png)
+## create a package.json
+# `npm init`
+
+- ### knows your deps from node_modules
+- ### knows your repository from git repo
+- ### always adds keys, never deletes
+
+![chick](public/img/chick.png)
+
+---
+class: top, left
+
+## create a package.json with defaults
+# `npm init --yes`
+
+![yes](public/img/yes.gif)
+
+---
+class: top, left
+
+## customize npm init questions
+# `~/.npm-init.js`
+
+### enforce license and best practices
+
+![question](public/img/question.png)
+![art](public/img/art.png)
+![question](public/img/question.png)
 
 ---
 class: center, middle
-background-image: url(public/img/pbn_horses.jpg)
-background-color: #FFE4C4
 
-# 314,582 registered users
+# check your package before you publish!
+
+
+# `npm pack`
+# `tar xvzf pkg.tar.gz`
+
+---
+class: center, middle
+
+# `np` by sindresorhus
+
+![np](public/img/np.gif)
+
+.citation[https://github.com/sindresorhus/np]
 
 ---
 class: center, middle
@@ -224,6 +540,74 @@ background-image: url(public/img/pbn_swans.jpg)
 background-color: #FFE4C4
 
 # dissociate and deprecate
+
+---
+class: middle, center
+background-image: url(public/img/pbn_swans.jpg)
+background-color: #FFE4C4
+
+![npm deprecate](public/img/npm-deprecate.png)
+
+---
+class: middle, center
+
+# scoped packages
+## (fancy way of saying namespaced packages!)
+
+---
+class: top, left
+
+## scoped packages
+# `npm i @scope/name`
+
+![telescope](public/img/telescope.png)
+
+--
+
+### scoped packages are private by default but you can make them public:
+### `npm publish --access=public`
+
+---
+class: center, middle
+
+# we now have search and download stat support for scopes!
+
+![](public/img/sparkles.png)
+![](public/img/new.png)
+![](public/img/sparkles.png)
+
+---
+class: center, middle
+
+![old bug](public/img/oldbug.png)
+
+---
+class: center, middle
+
+# you *already* have a scope!
+## (hint: it's your user name!)
+---
+class: top, left
+
+## private packages
+## `npm init --scope=<usrname>`
+
+### Use your private modules side by side with modules from the public registry
+
+![lock](public/img/lock.png)
+![dancers](public/img/dancers.png)
+![lock](public/img/lock.png)
+
+---
+class: top, left
+
+## npm organizations
+# `npm team`
+
+- ### create teams and add members
+- ### grant and revoke access to packages via teams
+
+![team](public/img/team.png)
 
 ---
 class: center, middle
@@ -294,84 +678,21 @@ background-color: #FFE4C4
 # npm is the largest package registry IN THE WORLD
 
 ---
-class: center, middle
-background-image: url(public/img/pbn_ducks.jpg)
-background-color: #FFE4C4
+class: top, left
 
-# there are 18M developers in the world
+# npm on-site
+## run your own on-premises npm registry
+### `npm login`
+### ` --registry=http://reg.amazing.com`
 
-.citation[https://www.infoq.com/news/2014/01/IDC-software-developers]
-
----
-class: center, middle
-background-image: url(public/img/pbn_ducks.jpg)
-background-color: #FFE4C4
-
-# ... and around 85% of those developers write JavaScript.
-
-.citation[http://stackoverflow.com/research/developer-survey-2016]
+![runner](public/img/runner.png)
+![office](public/img/office.png)
+![runner](public/img/runner.png)
 
 ---
-class: center, middle
-background-image: url(public/img/pbn_ducks.jpg)
-background-color: #FFE4C4
+class: middle, center
 
-## 85% of 18,539,500
-
---
-
-# 15M JavaScript developers in the world
-
----
-class: center , middle
-background-image: url(public/img/pbn_ducks.jpg)
-background-color: #FFE4C4
-
-# ~5.7M npm users
-
----
-class: center, middle
-background-image: url(public/img/pbn_ducks.jpg)
-background-color: #FFE4C4
-
-# .real-big[~50%]
-## of all JavaScript users use npm
-
----
-class: center, middle
-background-image: url(public/img/pbn_ducks.jpg)
-background-color: #FFE4C4
-
-# that's a lot of developers
-
----
-class: center, middle
-background-image: url(public/img/pbn_ducks.jpg)
-background-color: #FFE4C4
-
-# but we can do better
-
----
-class: center, middle
-background-image: url(public/img/pbn_setter.jpg)
-background-color: #FFE4C4
-
-# 80% front-end development
-
----
-class: center, middle
-background-image: url(public/img/pbn_setter.jpg)
-background-color: #FFE4C4
-
-# 60% server-side development
-
----
-class: center, middle
-background-image: url(public/img/pbn_setter.jpg)
-background-color: #FFE4C4
-
-# 20% ONLY front-end
-
+![npme addons](public/img/npme-addon.png)
 
 ---
 class: center, middle
@@ -420,6 +741,50 @@ class: center, middle
 background-image: url(public/img/pbn_ship.jpg)
 background-color: #FFE4C4
 
+# public APIs
+
+---
+class: center, middle
+background-image: url(public/img/pbn_ship.jpg)
+background-color: #FFE4C4
+
+# downloads API
+
+![blog downloads](public/img/blogdownloads.png)]
+
+.citation[http://blog.npmjs.org/post/92574016600/numeric-precision-matters-how-npm-download-counts]
+
+---
+class: center, middle
+background-image: url(public/img/pbn_ship.jpg)
+background-color: #FFE4C4
+
+![](public/img/downloadsapi1.png)
+![](public/img/downloadsapi2.png)
+![](public/img/downloadsapi3.png)
+
+.citation[https://github.com/npm/registry/blob/master/docs/download-counts.md]
+---
+class: center, middle
+background-image: url(public/img/pbn_ship.jpg)
+background-color: #FFE4C4
+
+# search API
+![search api](public/img/searchapi.png)
+
+---
+class: center, middle
+background-image: url(public/img/pbn_ship.jpg)
+background-color: #FFE4C4
+
+# registry changes-stream
+# [https://replicate.npmjs.com](https://replicate.npmjs.com)
+
+---
+class: center, middle
+background-image: url(public/img/pbn_ship.jpg)
+background-color: #FFE4C4
+
 ## write a registry follower
 
 ![follower](public/img/follower.png)
@@ -431,17 +796,16 @@ class: center, middle
 background-image: url(public/img/pbn_ship.jpg)
 background-color: #FFE4C4
 
-## [https://github.com/npm/registry/](https://github.com/npm/registry/)
-
-![registry repo](public/img/registry-repo.png)
-
+# webhooks
 
 ---
 class: center, middle
 background-image: url(public/img/pbn_ship.jpg)
 background-color: #FFE4C4
 
-# [https://replicate.npmjs.com](https://replicate.npmjs.com)
+## [https://github.com/npm/registry/](https://github.com/npm/registry/)
+
+![registry repo](public/img/registry-repo.png)
 
 ---
 class: center, middle
@@ -458,6 +822,14 @@ class: center, middle
 # `npm i npm@latest -g`
 ---
 class: center, middle
+
+# you can use any npm with any node version
+--
+
+# so you should always use the most up to date version
+
+---
+class: center, middle
 background-image: url(public/img/pbn_ship.jpg)
 background-color: #FFE4C4
 
@@ -469,7 +841,7 @@ class: center, middle
 # thanks!
 ## `me => @ag_dubs`
 
-## bit.ly/npm-numbers
+## bit.ly/fwdays-2017
 
 ![space invader](public/img/spaceinvader.png)
 ![ghost](public/img/ghost.png)

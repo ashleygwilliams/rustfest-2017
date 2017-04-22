@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900);
 
+img {
+  max-width: 100%;
+}
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -32,6 +36,20 @@ a:visited, a:active, a {
 
 .real-big {
   font-size: 2em;
+}
+
+li > code {
+  background-color: none;
+  padding: 0;
+}
+
+.dependencies li h2 {
+  margin-top: -50px;
+}
+
+.dependencies li img {
+  position: relative;
+  top: 40px;
 }
 
 .citation {
