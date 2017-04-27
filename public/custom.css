@@ -9,13 +9,10 @@ body {
 }
 
 .remark-slide-content {
-  background-color: rgba(203, 56, 55, 1);
-  color: white;
+  background-color: #F5F4F1;
 }
 
 h1, h2 {
-  background-color: rgba(203, 56, 55, 1);
-  color: white;
   padding: 10px 20px;
 }
 
