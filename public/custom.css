@@ -1,11 +1,52 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900);
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700');
 
 img {
   max-width: 100%;
 }
 
+.motorcycle img {
+  position: relative;
+  top: -45px;
+}
+
+.ag_dubs {
+  position: relative;
+  top: -60px;
+}
+
+.doctor img {
+  position: absolute;
+  bottom: 20px;
+  width: 350px;
+  right: 60px;
+}
+
+.sherlock img {
+  position: absolute;
+  width: 350px;
+  bottom: 20px;
+  left: 60px;
+}
+
+.no img, .warn img {
+  width: 400px;
+}
+
+.wreck img {
+  width: 700px;
+  position: relative;
+  top: -40px;
+}
+
+.architecture img {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  width: 400px;
+}
+
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Comfortaa', sans-serif;
 }
 
 .remark-slide-content {
@@ -14,6 +55,52 @@ body {
 
 h1, h2 {
   padding: 10px 20px;
+  font-weight: 300;
+}
+
+.tip {
+  display: block;
+  font-size: 4em;
+  font-weight: 300;
+}
+
+.tip-title {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.tip-title, .tip {
+  position: relative;
+  top: -80px;
+}
+
+blockquote {
+  font-size: 1.5em;
+}
+
+blockquote::before {
+  font-family: 'Times New Roman', serif;
+  font-weight: bold;
+  content: '“';
+  position: absolute;
+  display: inline-block;
+  top: 150px;
+  margin-left: -2.2em;
+  width: 2em;
+  text-align: right;
+  font-size: 120px;
+}
+
+.highlight-red {
+  text-shadow: 1px 1px 0px #F74C00;
+}
+
+.highlight-yellow {
+  text-shadow: 1px 1px 0px #F49600;
+}
+
+.highlight-blue {
+  text-shadow: 1px 1px 0px #01346B;
 }
 
 pre, code {
@@ -36,5 +123,4 @@ a:visited, a:active, a {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  background-color: rgba(203, 56, 55, 1);
 }
