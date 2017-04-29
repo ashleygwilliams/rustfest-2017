@@ -45,6 +45,28 @@ img {
   width: 400px;
 }
 
+.microservices img {
+  width: 600px;
+}
+
+.measure img {
+  width: 400px;
+}
+
+.community img {
+  position: absolute;
+  bottom: 20px;
+  right: 60px;
+  width: 450px;
+}
+
+.docs img {
+  position: absolute;
+  bottom: 20px;
+  width: 450px;
+  right: 60px;
+}
+
 body {
   font-family: 'Comfortaa', sans-serif;
 }
@@ -76,6 +98,7 @@ h1, h2 {
 
 blockquote {
   font-size: 1.5em;
+  line-height: 1.5em;
 }
 
 blockquote::before {
@@ -110,7 +133,7 @@ pre, code {
 }
 
 a:visited, a:active, a {
-  color: white;
+  color: black;
 }
 
 .real-big {

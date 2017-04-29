@@ -24,6 +24,45 @@ class: middle, center
 ---
 class: middle, center
 
+.npm[![npm](public/img/npm.png)]
+
+---
+class: middle, center
+
+.npm[![npm](public/img/npm2.png)]
+
+---
+class: middle, center
+
+![](public/img/packages.png)
+
+---
+class: middle, center
+
+![](public/img/rust-friends.png)
+
+---
+class: middle, center
+
+# how do i convince .highlight-yellow[my company] to use .highlight-red[rust]?
+
+---
+class: middle, left
+
+> The number of rational hypotheses that can explain any given phenomenon is infinite.
+
+.citation[Robert M. Pirsig, Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values]
+
+---
+class: middle, center
+
+.tip[10 tips]
+### (that may or may not work for you but will almost definitely make you a better rustacean)
+
+---
+class: middle, center
+
+### .highlight-yellow[tip 1]
 # don't .highlight-red[rewrite] your software in rust
 
 .no[![](public/img/no.png)]
@@ -31,6 +70,7 @@ class: middle, center
 ---
 class: middle, center
 
+### .highlight-yellow[tip 1]
 # don't .highlight-yellow[completely] .highlight-red[rewrite] your software in rust
 
 .warn[![](public/img/warning.png)]
@@ -69,55 +109,19 @@ class: middle, center
 ---
 class: middle, center
 
-.npm[![npm](public/img/npm.png)]
+![proxy](public/img/proxy.png)
 
 ---
 class: middle, center
 
-.npm[![npm](public/img/npm2.png)]
-
----
-class: middle, center
-
-# big numbers are big!
-
----
-class: middle, center
-
+.microservices[![microservices](public/img/microservices.png)]
 # microservices
 
 ---
 class: middle, center
 
-.highlight-yellow[.tip-title[tip 1]]
-.tip[have a problem to solve]
-
-.sherlock[![sherlock](public/img/sherlock.png)]
-
----
-class: middle, center
-
-# (this should be easy because all software is terrible)
-
----
-class: middle, center
-
-# storefile transforms
-
----
-class: middle, center
-
-# tip 2: find an interface or pattern and emulate it
-
----
-class: middle, center
-
-# scientific method
-
----
-class: middle, center
-
-# only change one thing at a time
+.tip-title[tip 2]
+.tip[show up with code]
 
 ---
 class: middle, center
@@ -127,7 +131,23 @@ class: middle, center
 ---
 class: middle, center
 
-# tip 3: tai chi, not karate
+![follower](public/img/follower1.png)
+
+---
+class: middle, center
+
+![follower](public/img/follower2.png)
+
+---
+class: middle, center
+
+![follower](public/img/follower-example.png)
+
+---
+class: middle, center
+
+.tip-title[tip 3]
+.tip[.highlight-red[don't sell]]
 
 ---
 class: middle, center
@@ -147,27 +167,54 @@ class: middle, center
 ---
 class: middle, center
 
-# tip 4: the hard part about programming isn't programming
+.tip-title[.highlight-yellow[tip 4]]
+.tip[sell sell sell]
 
 ---
 class: middle, center
+
+.tip-title[.highlight-yellow[tip 5]]
+.tip[the hard part of programming isn't programming]
+
+---
+class: top, left
 
 # docs
 
+- ### The Rust Reference
+- ### The Rust Book
+- ### The Rust Book (NEW AND UPDATED)
+- ### The Nomicon
+
+.docs[![docs](public/img/docs.png)]
+
 ---
-class: middle, center
+class: middle, left
 
 # tooling
 
+- ### `cargo`
+- ### `rustup`
+- ### `rustfmt`
+- ### `clippy`
+
+.tools[![tools](public/img/tools.png)]
+
 ---
-class: middle, center
+class: top, left
 
 # community
 
+- ### `#rust-beginners` on mozilla IRC
+- ### [exercism.io](http://www.exercism.io/)
+- ### RustConf, RustFest, RustBeltRust
+
+.community[![community](public/img/community.png)]
 ---
 class: middle, center
 
-# tip 5: the hard part about programming is programming
+.tip-title[tip 6]
+.tip[the hard part of programming is programming]
 
 ---
 class: middle, center
@@ -179,25 +226,59 @@ class: middle, center
 
 # sometimes your programming language isn't why your thing is slow
 
----
-class: middle, center
-
-# tip 6: be prepared for your reasoning to change
 
 ---
 class: middle, center
 
-# come for the speed, stay for the correctness
+.tip-title[tip 7]
+.tip[be prepared for things to change]
+
+---
+class: middle, left
+
+> If you’re going to repair a motorcycle, an adequate supply of gumption is the first
+> and most important tool. If you haven’t got that you might as well gather up all
+> the other tools and put them away, because they won’t do you any good.
+
+.citation[Robert M. Pirsig, Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values]
+
+---
+class: middle, left
+
+# gumption
+### **'ɡʌm(p)ʃ(ə)n/**
+#### noun, informal
+shrewd or spirited initiative and resourcefulness.
+
+synonyms:    initiative, resourcefulness, enterprise, imagination, imaginativeness, ingenuity, inventiveness;
 
 ---
 class: middle, center
 
-# writing a log parser in rust
+### problem:
+# our node service logs are full of runtime errors
+
+# parsing them is **slow**
+
+---
+class: middle, left
+
+> oh no my rust parser is 2x slower than the js version
 
 ---
 class: middle, center
 
-# tip 7: learning something new is a blessing, not a curse
+![stdin-lock](public/img/stdin-lock.png)
+
+---
+class: middle, center
+
+# `[0; 1024];`
+
+---
+class: middle, left
+
+> i just fully expected to rust my way into 50% perf over js. sometimes i forget that v8 is pretty darn fast.
 
 ---
 class: middle, left
@@ -209,6 +290,122 @@ class: middle, left
 > .highlight-red[goals are in doubt.]
 
 .citation[Robert M. Pirsig, Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values]
+
+---
+class: middle, center
+
+# i thought i'd be selling rust because of its speed
+
+---
+class: middle, center
+
+# ... but i'm selling rust because of its safety
+
+---
+class: middle, center
+
+# making rust go fast is actually kinda hard
+
+---
+class: middle, center
+
+# making rust correct is pretty simple!
+
+---
+class: middle, center
+
+.tip-title[tip 8]
+.tip[be prepared for things to stay the same]
+
+---
+class: middle, center
+
+# boring code is my favorite code
+
+---
+class: middle, center
+
+![science](public/img/science.png)
+# scientific method
+
+---
+class: middle, center
+
+# only change .highlight-red[one thing] at a time so you can measure .highlight-yellow[rust's impact]
+
+.measure[![measure](public/img/measure.png)]
+
+---
+class: middle, center
+
+# only change .highlight-red[one thing] so you don't burn everyone out
+
+---
+class: middle, center
+
+![how we deploy](public/img/how-we-deploy.png)
+
+.citation[http://blog.npmjs.org/post/152035356435/how-we-deploy-at-npm]
+
+---
+class: middle, center
+
+![git-deploy-rust](public/img/git-deploy-rust.png)
+
+---
+class: middle, center
+
+# we deploy rust using nearly the .highlight-yellow[exact same process] we deploy node
+
+---
+class: middle, center
+
+.highlight-yellow[.tip-title[tip 9]]
+.tip[have a problem to solve]
+
+.sherlock[![sherlock](public/img/sherlock.png)]
+
+---
+class: middle, center
+
+# (this should be easy because all software is terrible)
+
+---
+class: middle, center
+
+# big numbers are big
+
+---
+class: middle, center
+
+# storefile transforms
+
+---
+class: middle, center
+
+.tip-title[tip 10]
+.tip[learning curves are a blessing in disguise]
+
+---
+class: middle, left
+
+> this is the really fun part about learning new things. i still have the patience to do any number of silly things
+
+---
+class: middle, left
+
+# summary
+
+1. don't rewrite your software in rust
+2. show up with code
+3. don't sell
+4. sell sell sell
+5. the hard part of programming is not programming
+6. the hard part of programming is programming
+7. be prepared for change
+8. be prepared for things to stay the same
+9. have a problem to solve
+10. learning curves are a blessing in disguise
 
 ---
 class: middle, center
