@@ -2,6 +2,7 @@
 
 img {
   max-width: 100%;
+  max-height: 100%;
 }
 
 .motorcycle img {
@@ -67,6 +68,62 @@ img {
   right: 60px;
 }
 
+.tools img {
+  position: absolute;
+  width: 450px;
+  bottom: 100px;
+  right: 60px;
+}
+
+.burnout img {
+  width: 450px;
+}
+
+.trashfire img {
+  width: 550px;
+}
+
+.sonic img {
+  width: 600px;
+}
+
+.logs {
+  position: absolute;
+  bottom: 20px;
+  right: 60px;
+  width: 720px;
+}
+
+.programming img {
+  width: 400px;
+}
+
+.slack2 img {
+  width:500px;
+}
+
+.twitter img {
+  width: 550px;
+}
+
+.twitterslack img {
+  width: 500px;
+}
+
+.teacher img {
+  position: relative;
+  left: 250px;
+  width: 450px;
+}
+
+.real-big {
+  font-size: 2em;
+}
+
+.advice img {
+  width: 400px;
+}
+
 body {
   font-family: 'Comfortaa', sans-serif;
 }
@@ -93,7 +150,6 @@ h1, h2 {
 
 .tip-title, .tip {
   position: relative;
-  top: -80px;
 }
 
 blockquote {
